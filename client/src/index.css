@@ -35,7 +35,7 @@ display: inline-flex;
 }
 
 .movie-card:hover {
- border: 1px solid white;
+  box-shadow: 0px 0px 5px white;
  background: rgba(255, 255, 255, .4);
 }
 
@@ -57,7 +57,8 @@ display: inline-flex;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
+  background: rgba(255, 255, 255, .2);
+  box-shadow: 0 5px 15px black;
 }
 
 .saved-list h3 {
@@ -103,11 +104,12 @@ display: inline-flex;
 
 .home-button:hover {
   background-color: rgb(117, 201, 253);
-  box-shadow: .2px .2px 5px lightgrey;
+  box-shadow: 0px 0px 5px white;
 }
 
 .container {
  
   display: inline-flex;
-  margin-left: 20px;
+  margin-left: 32px;
+  margin-top: 10px;
 }
