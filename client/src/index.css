@@ -63,6 +63,8 @@ display: inline-flex;
 
 .saved-list h3 {
   margin-right: 10px;
+  color: white;
+  text-shadow: 1px 1px 5px black;
 }
 
 .saved-movie {
