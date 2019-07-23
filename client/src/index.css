@@ -1,19 +1,42 @@
+* {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #f2f2f2;
+  background-image: url(./blur2.jpg);
+  background-repeat: no-repeat;
+  background-color: #000000;
 }
 
 .movie-card {
-  background-color: #fff;
-  border: 0;
-  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
-    0 2px 4px rgba(0, 0, 0, 0.24);
-  padding: 1rem;
+  background: rgba(255, 255, 255, .2);
+  box-shadow: 0 5px 15px black;
+  
+
+  padding: 20px;
   cursor: pointer;
-  position: relative;
+display: inline-flex;
   margin: 1rem auto;
+  width: 500px;
+  text-align: center;
+  flex-direction: column;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: linear .3s;
+  text-shadow: 1px 1px 5px black;
+  
+ 
+  
+}
+
+.movie-card:hover {
+ border: 1px solid white;
+ background: rgba(255, 255, 255, .4);
 }
 
 .movie-director {
@@ -34,6 +57,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 
 .saved-list h3 {
@@ -60,8 +84,11 @@ body {
   border: 1px solid grey;
   padding: 5px 10px;
   background-color: lightseagreen;
+  transition: linear .3s;
+  cursor: pointer;
 }
 .save-button:hover {
+  
   background-color: green;
   color: white;
 }
@@ -69,4 +96,18 @@ body {
 .home-button {
   padding: 5px 10px;
   background-color: lightskyblue;
+  text-decoration: none;
+  color: white;
+  transition: linear .3s;
+}
+
+.home-button:hover {
+  background-color: rgb(117, 201, 253);
+  box-shadow: .2px .2px 5px lightgrey;
+}
+
+.container {
+ 
+  display: inline-flex;
+  margin-left: 20px;
 }
